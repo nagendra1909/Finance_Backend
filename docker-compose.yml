@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  finance-backend:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:5000/customers"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

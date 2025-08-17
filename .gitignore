@@ -1,0 +1,53 @@
+# Node
+/node_modules/
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+*.log
+
+# Build output
+/dist/
+/build/
+/.next/
+/out/
+
+# Prisma artifacts
+/.prisma/
+prisma/migrations/
+Prisma/migrations/
+node_modules/.prisma/
+
+# Coverage
+/coverage/
+.nyc_output/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Misc
+*.tgz
+.cache/
+
+# Ignore local docker-compose overrides
+docker-compose.override.yml
+
+# Ignore local development override files
+*.local
+
+# Ignore installed binaries
+/*.tgz
+
+# Keep Git from accidentally committing this file itself in some workflows
+!.gitignore
