@@ -6,7 +6,7 @@
     "dev": "node index.js",
     "build": "prisma generate && tsc",
     "start": "node index.js",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate --schema=./Prisma/schema.prisma"
   },
   "keywords": [],
   "author": "",
